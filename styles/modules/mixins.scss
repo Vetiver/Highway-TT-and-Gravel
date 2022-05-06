@@ -1,0 +1,11 @@
+@mixin pageTheme($background-color, $color) {
+  background-color: $background-color;
+  color: $color;
+}
+
+@mixin font($size: inherit, $weight: inherit, $height: inherit, $space: normal) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  letter-spacing: $space;
+}
