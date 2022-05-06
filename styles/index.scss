@@ -1,3 +1,15 @@
-@import '../styles/modules/variables.scss';
-@import '../styles/modules/mixins.scss';
-@import '../styles/modules/blocks/page/page.scss';
+@import "../vendors/normalize.css";
+@import "../vendor/fonts/fonts.css";
+
+@import './modules/mixins.scss';
+@import './modules/variables.scss';
+
+/* page */
+@import './modules/blocks/page/page.scss';
+@import './modules/blocks/page/__container/page__container.scss';
+
+/* header */
+@import './modules/blocks/header/header.scss';
+@import './modules/blocks/header/__navbar-list/header__navbar-list.scss';
+@import './modules/blocks/header/__navbar-item/header__navbar-item.scss';
+@import './modules/blocks/header/__navbar-link/header__navbar-link.scss';

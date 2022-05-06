@@ -1,20 +1,62 @@
-@import url(../vendors/normalize.css);
-@import url(../vendors/fonts/fonts.css);
+@import url(/Users/veronikaantoncik/Desktop/studyProject/vendors/normalize.css);
+@import url(/Users/veronikaantoncik/Desktop/studyProject/vendors/fonts/fonts.css);
 /* ---------------------------- colors ---------------------------- */
 /* --------------------------- font-sizes --------------------------- */
+/* page */
 .page {
   margin: 0 auto;
   max-width: 1440px;
-  background-color: plum;
+  background-color: #f4f4f4;
   color: #151515;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 18px;
   font-weight: 400;
+  line-height: 1.55;
   font-style: normal;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
+}
+
+.page__container {
+  padding-left: 120px;
+}
+
+/* header */
+.header {
+  padding-right: 120px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.header__navbar-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.28;
+  font-style: normal;
+  color: #151515;
+  text-align: right;
+}
+
+.header__navbar-item {
+  padding-left: 34px;
+}
+
+.header__navbar-link {
+  text-decoration: none;
+  color: #151515;
+}
+
+.header__navbar-link:hover {
+  opacity: 0.75;
 }
 /*# sourceMappingURL=index.css.map */
