@@ -1,0 +1,7 @@
+.header__navbar-link {
+  @include resetLinkStyles($dark);
+}
+
+.header__navbar-link:hover {
+  opacity: 0.75;
+}

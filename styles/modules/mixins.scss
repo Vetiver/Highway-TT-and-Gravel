@@ -1,11 +1,28 @@
-@mixin pageTheme($background-color, $color) {
+@mixin pageTheme($background-color, $color) {  // в page для смены темы страницы
   background-color: $background-color;
   color: $color;
 }
 
-@mixin font($size: inherit, $weight: inherit, $height: inherit, $space: normal) {
+@mixin font($size, $weight, $height, $style) { // для текста
   font-size: $size;
   font-weight: $weight;
   line-height: $height;
-  letter-spacing: $space;
+  font-style: $style;
+}
+
+@mixin flex($horizontal, $vertical) {
+  display: flex;
+  justify-content: $horizontal;
+  align-items: $vertical;
+}
+
+@mixin resetListStyles() { // для ul и ol
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin resetLinkStyles($color) {
+    text-decoration: none;
+    color: $color;
 }
