@@ -1,0 +1,6 @@
+.text-content {
+  width: 460px;
+  @include font(18px, 400px, 28px, normal);
+  @include resetListStyles();
+  margin-top: 50px;
+}
