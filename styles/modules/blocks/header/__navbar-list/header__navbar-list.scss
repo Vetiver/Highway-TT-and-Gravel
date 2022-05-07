@@ -1,7 +1,0 @@
-.header__navbar-list {
-  @include resetListStyles();
-  @include flex(flex-end, center);
-  @include font($navbar-size, 500, 1.28, normal);
-  color: $dark;
-  text-align: right;
-}

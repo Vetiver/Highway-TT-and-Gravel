@@ -3,4 +3,6 @@
   @include font(18px, 400px, 28px, normal);
   @include resetListStyles();
   margin-top: 50px;
+  grid-area: paragraph;
+  color: #646464;
 }

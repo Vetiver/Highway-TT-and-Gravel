@@ -1,5 +1,6 @@
 .subtitle {
-  @include font(24px, 600, 1.33, normal);
+  max-width: 460px;
+  @include font(55px, 700, 1.09, normal);
   margin: 0;
-  max-width: 230px;
+  grid-area: subtitle;
 }

@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="bicycles, shop" />
     <meta name="author" content="Дмитрий Сережкин, Вероника Антончик" />
-    <link rel="icon" type="image/svg" href="" />
+    <link rel="icon" type="image/svg" href="./images/logos/strange-round.svg" />
     <link rel="stylesheet" href="./styles/index.css" />
-    <title></title>
+    <title>Велосипеды</title>
   </head>
   <body class="page">
     <div class="page__container">
@@ -34,9 +34,9 @@
           <div class="description__info-block">
             <h1 class="title">Шоссе, ТТ и Грэвел</h1>
             <p class="text-content"
-              >Триатлонные старты, горные серпантины или грейвел заезды по
-              живописным маршрутам – нужно только определиться с выбором
-              велосипеда и отправиться в путь.</p
+              >Триатлонные старты, горные серпантины или грейвел&nbsp;заезды по
+              живописным маршрутам – нужно&nbsp;только определиться с выбором
+              велосипеда&nbsp;и отправиться в путь.</p
             >
             <button type="button" class="description__button"
               ><span class="description__button-text">Подробнее</span></button
@@ -57,19 +57,39 @@
           />
         </section>
 
-        <section> </section>
+        <section class="training">
+          <h2 class="subtitle">Тренировки</h2>
+          <p class="text-content">
+            Чтобы найти маршрут для тренировки можно воспользоваться сервисом
+            Komoot, а записать эти тренировки поможет приложение Strava, а также
+            это&nbsp;приложение позволит построить тренировочный&nbsp;план.
+          </p>
+          <ul class="training__plan-list">
+            <li class="training__plan-item">
+              <button class="training__plan-button">Strava</button>
+            </li>
+            <li class="training__plan-item">
+              <button class="training__plan-button">Komoot</button>
+            </li>
+          </ul>
+          <img
+            class="training__image"
+            src="./images/pictures/asphalt-road.png"
+            alt="асфальтированная дорогая в чаще"
+          />
+        </section>
       </main>
       <!-- /.content -->
 
       <footer class="footer">
-        <h2 class="subtitle subtitle_place_footer"
-          >Подпишитесь на рассылку —</h2
-        >
+        <h2 class="footer__title">Подпишитесь на рассылку —</h2>
         <label class="footer__label footer__label_for_email" for="email">
           <input
             class="footer__email-input"
             type="email"
             placeholder="Ваш e-mail"
+            name="email"
+            id="email"
           />
         </label>
         <p class="footer__copyright">&copy; Road Club 2021</p>
@@ -87,6 +107,7 @@
               class="footer__theme-controller"
               type="checkbox"
               name="theme-controller"
+              id="theme-controller"
             />
             <span class="footer__theme-controller-slider"></span>
           </label>

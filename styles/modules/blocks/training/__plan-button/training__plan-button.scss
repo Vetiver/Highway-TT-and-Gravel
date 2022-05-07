@@ -1,0 +1,12 @@
+.training__plan-button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: $transparent;
+  @include font($paragraph-size, 600, 1.56, normal);
+  cursor: pointer;
+}
+
+.training__plan-button:hover {
+  opacity: 75%;
+}
