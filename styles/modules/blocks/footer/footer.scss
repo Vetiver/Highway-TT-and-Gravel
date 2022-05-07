@@ -1,0 +1,11 @@
+.footer {
+  background: $lightGray;
+  padding: 80px 120px 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "footer-title ."
+    "email ."
+    "copyright switcher";
+  gap: 50px;
+}

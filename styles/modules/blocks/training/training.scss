@@ -1,0 +1,12 @@
+.training {
+  padding-top: 150px;
+  padding-bottom: 120px;
+  padding-right: 120px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 55px 1fr 28px;
+  grid-template-areas:
+    "subtitle training-image"
+    "paragraph training-image"
+    "training-buttons training-image";
+}

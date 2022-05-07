@@ -5,6 +5,8 @@ $lighterGray: #f4f4f4;
 $lightGray: #efefef; // footer only
 $darkGray: #333;
 $darkerGray: #2f2f2f; // footer only
+$transparent: transparent;
+$snow: #f4f4f4; // for cards
 
 // for text
 $white: #fff;
@@ -13,14 +15,15 @@ $americanSilver: #cfcfcf; // used for copyright
 $mediumDarkGray: #565656; // used for copyright
 $semi-gray: #646464; // for paragraphs color: #222, opacity: 70%
 $dark: #151515;
+$black: #000;
 
 // for buttons
 $green: #24b47e;
 
 // for inputs
 $lightShadeGray: #e3e3e3; // // for dark theme: #7d7d7d, opacity: 50%
-$gray: #bebebe; // for light theme: ##C7C7C7, opacity: 50%
-
+$gray: rgba(199, 199, 199, 1);
+$grayOp50: rgba(199, 199, 199, 0.5);
 
 /* --------------------------- font-sizes --------------------------- */
 

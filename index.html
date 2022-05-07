@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="bicycles, shop" />
     <meta name="author" content="Дмитрий Сережкин, Вероника Антончик" />
-    <link rel="icon" type="image/svg" href="" />
+    <link rel="icon" type="image/svg" href="./images/logos/strange-round.svg" />
     <link rel="stylesheet" href="./styles/index.css" />
-    <title></title>
+    <title>Велосипеды</title>
   </head>
   <body class="page">
     <div class="page__container">
@@ -32,24 +32,156 @@
       <main class="content">
         <section class="description">
           <div class="description__info-block">
-            <h2 class="title">Шоссе, ТТ и Грэвел</h2>
-            <p class="text-content">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам – нужно только определиться с выбором велосипеда и отправиться в путь.</p>
-            <button  type="button" class="description__button"><span class="description__button-text">Подробнее</span></button>
+            <h1 class="title">Шоссе, ТТ и&nbsp;Грэвел</h1>
+            <p class="text-content"
+              >Триатлонные старты, горные серпантины или грейвел&nbsp;заезды по
+              живописным маршрутам – нужно&nbsp;только определиться с выбором
+              велосипеда&nbsp;и&nbsp;отправиться в путь.</p
+            >
+            <button type="button" class="description__button"
+              ><span class="description__button-text">Подробнее</span></button
+            >
             <p class="description__brand">Cannondale Systemsix</p>
           </div>
           <div class="description__image-block">
-            <img src="./images/pictures/wood-and-road.png" alt="wood-and-road" class="description__image-forest">
+            <img
+              src="./images/pictures/wood-and-road.png"
+              alt="wood-and-road"
+              class="description__image-forest"
+            />
           </div>
-          <img src="./images/bicycles/Cannondale-Systemsix-Himod.png" alt="Cannondale-Systemsix-Himod" class="description__image-bicycle">
+          <img
+            src="./images/bicycles/img-for-info.png"
+            alt="Cannondale-Systemsix-Himod"
+            class="description__image-bicycle"
+          />
         </section>
 
-        <section>
-          
+        <section class="bicycles">
+          <h2 class="subtitle">Велосипеды</h2>
+          <ul class="bicycles__type-list">
+            <li class="bicycles__type-item">
+              <button class="bicycles__type-button">Шоссе</button>
+            </li>
+            <li class="bicycles__type-item">
+              <button
+                class="bicycles__type-button bicycles__type-button_non-active"
+              >
+                Грэвел
+              </button>
+            </li>
+            <li class="bicycles__type-item">
+              <button
+                class="bicycles__type-button bicycles__type-button_non-active"
+              >
+                TT
+              </button>
+            </li>
+          </ul>
+
+          <ul class="bicycles__cards-list">
+            <li class="bicycles__cards-item">
+              <figure class="bicycles__cards-item-container">
+                <img
+                  class="bicycles__cards-item-image"
+                  src="./images/bicycles/Cervelo-Caledonia-5.png"
+                  alt="Велосипед для шоссе черный"
+                />
+                <figcaption class="bicycles__cards-item-caption">
+                  Cervelo Caledonia-5
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="bicycles__cards-item">
+              <figure class="bicycles__cards-item-container">
+                <img
+                  class="bicycles__cards-item-image"
+                  src="./images/bicycles/Cannondale-Systemsix-Himod.png"
+                  alt="Велосипед для шоссе синий с розовыми элементами"
+                />
+                <figcaption class="bicycles__cards-item-caption">
+                  Cannondale Systemsix Himod
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="bicycles__cards-item">
+              <figure class="bicycles__cards-item-container">
+                <img
+                  class="bicycles__cards-item-image"
+                  src="./images/bicycles/Trek-Domane-SL-7.png"
+                  alt="Велосипед для шоссе темно-бирюзовый"
+                />
+                <figcaption class="bicycles__cards-item-caption">
+                  Trek Domane SL-7</figcaption
+                >
+              </figure>
+            </li>
+          </ul>
+        </section>
+
+        <section class="training">
+          <h2 class="subtitle">Тренировки</h2>
+          <p class="text-content">
+            Чтобы найти маршрут для тренировки можно воспользоваться сервисом
+            Komoot, а записать эти тренировки поможет приложение Strava, а также
+            это&nbsp;приложение позволит построить тренировочный&nbsp;план.
+          </p>
+          <ul class="training__plan-list">
+            <li class="training__plan-item">
+              <button class="training__plan-button">Strava</button>
+            </li>
+            <li class="training__plan-item">
+              <button class="training__plan-button">Komoot</button>
+            </li>
+          </ul>
+          <img
+            class="training__image"
+            src="./images/pictures/asphalt-road.png"
+            alt="асфальтированная дорогая в чаще"
+          />
         </section>
       </main>
       <!-- /.content -->
 
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <h2 class="footer__title">Подпишитесь на рассылку —</h2>
+        <label class="footer__label footer__label_for_email" for="email">
+          <input
+            class="footer__email-input"
+            type="email"
+            placeholder="Ваш e-mail"
+            name="email"
+            id="email"
+          />
+        </label>
+        <p class="footer__copyright">&copy; Road Club 2021</p>
+        <div class="footer__switch-container">
+          <img
+            src="./images/logos/sun.svg"
+            alt="светлая тема"
+            class="footer__theme-icon footer__theme-icon_theme_ligth"
+          />
+          <label
+            class="footer__label footer__label_for_switch"
+            for="theme-controller"
+          >
+            <input
+              class="footer__theme-controller"
+              type="checkbox"
+              name="theme-controller"
+              id="theme-controller"
+            />
+            <span class="footer__theme-controller-slider"></span>
+          </label>
+          <img
+            src="./images/logos/moon.svg"
+            alt="темная тема"
+            class="footer__theme-icon footer__theme-icon_theme_dark"
+          />
+        </div>
+      </footer>
       <!-- /.footer -->
     </div>
     <!-- /.page__container -->

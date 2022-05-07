@@ -1,7 +1,11 @@
 .description__image-bicycle {
   position: absolute;
-  width: 400px;
-  height: 300px;
+  max-width: 340px;
+  max-height: 260px;
+  padding: 20px 50px;
+  background: $snow;
   left: 630px;
   top: 400px;
+  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+  border-radius: 20px;
 }

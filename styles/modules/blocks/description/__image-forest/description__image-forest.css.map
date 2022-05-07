@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,0BAA0B,CAAC;EACzB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,WAAW,EAAE,KAAK;EAClB,UAAU,EAAE,IAAI;CACjB",
-    "sources": [
-        "description__image-forest.scss"
-    ],
-    "names": [],
-    "file": "description__image-forest.css"
-}

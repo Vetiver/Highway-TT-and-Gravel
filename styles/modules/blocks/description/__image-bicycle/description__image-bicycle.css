@@ -1,7 +1,8 @@
 .description__image-bicycle {
   position: absolute;
-  width: 400px;
-  height: 300px;
+  max-width: 340px;
+  max-height: 260px;
+  padding: 0%;
   left: 630px;
   top: 400px;
 }

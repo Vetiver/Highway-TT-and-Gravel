@@ -1,0 +1,8 @@
+.training__plan-list {
+  @include resetListStyles();
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 30px;
+  grid-area: training-buttons;
+  align-items: flex-end;
+}

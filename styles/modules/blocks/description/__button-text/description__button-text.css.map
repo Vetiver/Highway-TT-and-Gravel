@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,yBAAyB,CAAC;EACxB,KAAK,EAAE,KAAK;EACZ,KAAK,EAAE,OAAO;EACd,UAAU,EAAE,MAAM;EAClB,cAAc,EAAE,GAAG;CAEpB",
-    "sources": [
-        "description__button-text.scss"
-    ],
-    "names": [],
-    "file": "description__button-text.css"
-}
