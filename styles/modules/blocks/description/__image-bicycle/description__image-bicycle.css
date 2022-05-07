@@ -2,10 +2,8 @@
   position: absolute;
   max-width: 340px;
   max-height: 260px;
-  padding: 20px 50px;
-  background: $snow;
+  padding: 0%;
   left: 630px;
   top: 400px;
-  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
-  border-radius: 20px;
 }
+/*# sourceMappingURL=description__image-bicycle.css.map */

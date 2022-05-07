@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,2BAA2B,CAAC;EAC1B,QAAQ,EAAE,QAAQ;EAClB,SAAS,EAAE,KAAK;EAChB,UAAU,EAAE,KAAK;EACjB,OAAO,EAAE,EAAE;EACX,IAAI,EAAE,KAAK;EACX,GAAG,EAAE,KAAK;CACX",
+    "sources": [
+        "description__image-bicycle.scss"
+    ],
+    "names": [],
+    "file": "description__image-bicycle.css"
+}
