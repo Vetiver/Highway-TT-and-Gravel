@@ -155,6 +155,86 @@
   top: 400px;
 }
 
+/* bicycles */
+.bicycles {
+  padding: 60px 120px 60px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "subtitle type-buttons" "cards cards";
+  gap: 120px;
+}
+
+.bicycles__type-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding-bottom: 6px;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 40px;
+  grid-area: type-buttons;
+  align-items: end;
+  justify-self: end;
+}
+
+.bicycles__type-button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.56;
+  font-style: normal;
+}
+
+.bicycles__type-button:hover {
+  opacity: 0.75;
+}
+
+.bicycles__cards-item-container {
+  margin: 0;
+}
+
+.bicycles__cards-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  grid-area: cards;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.bicycles__type-button_non-active {
+  font-weight: 400;
+  color: #646464;
+}
+
+.bicycles__type-button_non-active:hover {
+  color: #222;
+  opacity: 0.6;
+}
+
+.bicycles__cards-item-image {
+  max-width: 340px;
+  max-height: 340px;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 20px;
+  filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
+}
+
+.bicycles__cards-item-caption {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.56;
+  font-style: normal;
+  padding-left: 6px;
+  padding-top: 12px;
+}
+
 /* training */
 .training {
   padding-top: 150px;
@@ -182,11 +262,11 @@
   padding: 0;
   margin: 0;
   background: transparent;
+  cursor: pointer;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.56;
   font-style: normal;
-  cursor: pointer;
 }
 
 .training__plan-button:hover {

@@ -1,8 +1,8 @@
-.training__plan-button {
+.bicycles__type-button {
   @include resetButtonStyles();
   @include font($paragraph-size, 600, 1.56, normal);
 }
 
-.training__plan-button:hover {
-  opacity: 75%;
+.bicycles__type-button:hover {
+  opacity: 0.75;
 }
