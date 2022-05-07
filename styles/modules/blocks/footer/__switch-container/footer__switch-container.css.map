@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,yBAAyB,CAAC;EACxB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,WAAW,EAAE,MAAM;EACnB,cAAc,EAAE,GAAG;EACnB,SAAS,EAAE,KAAK;EAChB,SAAS,EAAE,QAAQ;EACnB,YAAY,EAAE,QAAQ;EACtB,qBAAqB,EAAE,eAAe;EACtC,GAAG,EAAE,IAAI;CACV",
-    "sources": [
-        "footer__switch-container.scss"
-    ],
-    "names": [],
-    "file": "footer__switch-container.css"
-}

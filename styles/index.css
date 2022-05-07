@@ -20,7 +20,8 @@
   text-rendering: optimizeLegibility;
 }
 
-.page__container {
+.page__container > .header,
+.page__container > .content {
   padding-left: 120px;
 }
 
@@ -160,10 +161,8 @@
 
 /* footer */
 .footer {
-  border: 1px dashed plum;
-  padding-right: 120px;
-  padding-top: 80px;
-  padding-bottom: 60px;
+  background: #efefef;
+  padding: 80px 120px 60px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "title ." "email ." "copyright switcher";
