@@ -1,0 +1,7 @@
+.footer__copyright {
+  margin: 0;
+  @include font($navbar-size, 600, 1.4, normal);
+  color: $americanSilver;
+  grid-area: copyright;
+  align-self: flex-end;
+}

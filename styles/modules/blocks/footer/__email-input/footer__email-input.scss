@@ -1,0 +1,9 @@
+.footer__email-input {
+  @include font($inputs-size, 500, 2.15, normal);
+  background: $transparent;
+  padding: 11px 0 11px 20px;
+  border: 1px solid #bebebe;
+  border-radius: 4px;
+  width: 360px;
+  box-sizing: border-box;
+}

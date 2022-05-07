@@ -1,5 +1,4 @@
-@charset "UTF-8";
-@import url(c:\Users\Дима\Desktop\Highway-TT-and-Gravel\vendors\normalize.css);
+@import url(/Users/veronikaantoncik/Desktop/Highway-TT-and-Gravel/vendors/normalize.css);
 /* ---------------------------- colors ---------------------------- */
 /* --------------------------- font-sizes --------------------------- */
 /* page */
@@ -12,7 +11,7 @@
   font-weight: 400;
   line-height: 1.55;
   font-style: normal;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -25,7 +24,7 @@
   padding-left: 120px;
 }
 
-/* texts */
+/* title */
 .title {
   width: 460px;
   font-size: 55px;
@@ -38,6 +37,21 @@
   margin-top: 80px;
 }
 
+/* subtitle */
+.subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+  font-style: normal;
+  margin: 0;
+  max-width: 230px;
+}
+
+.subtitle_place_footer {
+  grid-area: title;
+}
+
+/* paragraphs */
 .text-content {
   width: 460px;
   font-size: 18px;
@@ -61,15 +75,9 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  align-items: center;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.28;
@@ -93,8 +101,6 @@
 
 /* description */
 .description {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   background: #F4F4F4;
@@ -150,5 +156,106 @@
   height: 300px;
   left: 630px;
   top: 400px;
+}
+
+/* footer */
+.footer {
+  border: 1px dashed plum;
+  padding-right: 120px;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "title ." "email ." "copyright switcher";
+  gap: 50px;
+}
+
+.footer__copyright {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  font-style: normal;
+  color: #cfcfcf;
+  grid-area: copyright;
+  align-self: flex-end;
+}
+
+.footer__email-input {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 2.15;
+  font-style: normal;
+  background: transparent;
+  padding: 11px 0 11px 20px;
+  border: 1px solid #bebebe;
+  border-radius: 4px;
+  width: 360px;
+  box-sizing: border-box;
+}
+
+.footer__switch-container {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+  max-width: 135px;
+  grid-area: switcher;
+  justify-self: flex-end;
+  grid-template-columns: repeat(3, auto);
+  gap: 22px;
+}
+
+.footer__label_for_switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+}
+
+.footer__label_for_email {
+  padding-bottom: 35px;
+  grid-area: email;
+}
+
+.footer__theme-controller {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.footer__theme-controller-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  transition: .4s;
+  border-radius: 12px;
+}
+
+.footer__theme-controller-slider:before {
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  background-color: #24B47E;
+  left: 2px;
+  bottom: 2px;
+  border-radius: 100%;
+  transition: .4s;
+}
+
+.footer__theme-controller:checked + .footer__theme-controller-slider:before {
+  transform: translateX(20px);
 }
 /*# sourceMappingURL=index.css.map */

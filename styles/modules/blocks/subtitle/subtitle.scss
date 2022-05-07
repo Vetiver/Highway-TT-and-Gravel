@@ -1,0 +1,5 @@
+.subtitle {
+  @include font(24px, 600, 1.33, normal);
+  margin: 0;
+  max-width: 230px;
+}

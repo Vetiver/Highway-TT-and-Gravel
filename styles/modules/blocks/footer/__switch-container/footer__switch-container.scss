@@ -1,0 +1,11 @@
+.footer__switch-container {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+  max-width: 135px;
+  grid-area: switcher;
+  justify-self: flex-end;
+  grid-template-columns: repeat(3, auto);
+  gap: 22px;
+}

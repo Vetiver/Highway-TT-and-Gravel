@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,wBAAwB,CAAC;EACvB,cAAc,EAAE,IAAI;EACpB,SAAS,EAAE,KAAK;CACjB",
+    "sources": [
+        "footer__label_for_email.scss"
+    ],
+    "names": [],
+    "file": "footer__label_for_email.css"
+}
