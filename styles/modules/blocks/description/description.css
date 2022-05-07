@@ -1,0 +1,9 @@
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background: #F4F4F4;
+  border: 1px solid red;
+}
+/*# sourceMappingURL=description.css.map */

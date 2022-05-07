@@ -1,0 +1,6 @@
+.title {
+  width: 460px;
+  @include font(55px, 700px, 60px, normal);
+  @include resetListStyles();
+  margin-top: 80px;
+}

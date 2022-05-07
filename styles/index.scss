@@ -1,5 +1,4 @@
 @import "../vendors/normalize.css";
-@import "../vendor/fonts/fonts.css";
 
 @import './modules/mixins.scss';
 @import './modules/variables.scss';
@@ -8,8 +7,20 @@
 @import './modules/blocks/page/page.scss';
 @import './modules/blocks/page/__container/page__container.scss';
 
+/* texts */
+@import './modules/blocks/title/title.scss';
+@import './modules/blocks/text-content/text-content.scss';
+
 /* header */
 @import './modules/blocks/header/header.scss';
 @import './modules/blocks/header/__navbar-list/header__navbar-list.scss';
 @import './modules/blocks/header/__navbar-item/header__navbar-item.scss';
 @import './modules/blocks/header/__navbar-link/header__navbar-link.scss';
+
+/* description */
+@import './modules/blocks/description/description.scss';
+@import './modules/blocks/description/__button/description__button.scss';
+@import './modules/blocks/description/__button-text/description__button-text.scss';
+@import './modules/blocks/description/__brand/description__brand.scss';
+@import './modules/blocks/description/__image-forest/description__image-forest.scss';
+@import './modules/blocks/description/__image-bicycle/description__image-bicycle.scss';

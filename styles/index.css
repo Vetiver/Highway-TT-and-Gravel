@@ -1,5 +1,5 @@
-@import url(/Users/veronikaantoncik/Desktop/studyProject/vendors/normalize.css);
-@import url(/Users/veronikaantoncik/Desktop/studyProject/vendors/fonts/fonts.css);
+@charset "UTF-8";
+@import url(c:\Users\Дима\Desktop\Highway-TT-and-Gravel\vendors\normalize.css);
 /* ---------------------------- colors ---------------------------- */
 /* --------------------------- font-sizes --------------------------- */
 /* page */
@@ -12,7 +12,7 @@
   font-weight: 400;
   line-height: 1.55;
   font-style: normal;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -23,6 +23,31 @@
 
 .page__container {
   padding-left: 120px;
+}
+
+/* texts */
+.title {
+  width: 460px;
+  font-size: 55px;
+  font-weight: 700px;
+  line-height: 60px;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 80px;
+}
+
+.text-content {
+  width: 460px;
+  font-size: 18px;
+  font-weight: 400px;
+  line-height: 28px;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 50px;
 }
 
 /* header */
@@ -36,9 +61,15 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.28;
@@ -58,5 +89,66 @@
 
 .header__navbar-link:hover {
   opacity: 0.75;
+}
+
+/* description */
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background: #F4F4F4;
+  border: 1px solid red;
+}
+
+.description__button {
+  margin-top: 66px;
+  width: 180px;
+  height: 50px;
+  border: none;
+  background: #24B47E;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.description__button-text {
+  width: 160px;
+  color: #FFFFFF;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 600px;
+  line-height: 18px;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.description__brand {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 167px;
+  width: 194px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  font-style: normal;
+}
+
+.description__image-forest {
+  width: 610px;
+  height: 836px;
+  margin-left: 248px;
+  margin-top: 20px;
+}
+
+.description__image-bicycle {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  left: 630px;
+  top: 400px;
 }
 /*# sourceMappingURL=index.css.map */
