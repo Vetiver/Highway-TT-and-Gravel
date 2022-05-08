@@ -102,8 +102,7 @@
 .description {
   display: flex;
   position: relative;
-  background: #F4F4F4;
-  border: 1px solid red;
+  background: #f4f4f4;
 }
 
 .description__button {
@@ -160,6 +159,7 @@
   height: 836px;
   margin-left: 248px;
   margin-top: 20px;
+  display: block;
 }
 
 .description__image-bicycle {
@@ -172,6 +172,43 @@
   top: 400px;
   box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
   border-radius: 20px;
+}
+
+/* quote */
+.quote {
+  padding-top: 120px;
+  padding-right: 120px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "quote-image quote-title" "quote-image quote-caption";
+  gap: 0 80px;
+}
+
+.quote__image {
+  grid-area: quote-image;
+}
+
+.quote__caption-container {
+  grid-area: quote-caption;
+  align-self: end;
+}
+
+.quote__author {
+  margin: 0;
+  padding-bottom: 6px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  font-style: normal;
+}
+
+.quote__author-profession {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  font-style: normal;
+  color: #646464;
 }
 
 /* bicycles */
@@ -457,5 +494,52 @@
 
 .footer__theme-controller:checked + .footer__theme-controller-slider:before {
   transform: translateX(20px);
+}
+
+.quote {
+  padding-top: 120px;
+  padding-right: 120px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "quote-image quote-title" "quote-image quote-caption";
+  gap: 0 80px;
+}
+
+.quote__image {
+  grid-area: quote-image;
+}
+
+.quote__title {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.29;
+  font-style: normal;
+  letter-spacing: -0.5px;
+  grid-area: quote-title;
+  max-width: 470px;
+}
+
+.quote__caption-container {
+  grid-area: quote-caption;
+  align-self: end;
+}
+
+.quote__author {
+  margin: 0;
+  padding-bottom: 6px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  font-style: normal;
+}
+
+.quote__author-profession {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  font-style: normal;
+  color: #646464;
 }
 /*# sourceMappingURL=index.css.map */
