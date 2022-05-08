@@ -40,6 +40,15 @@
 @import "./modules/blocks/quote/__author/quote__author.scss";
 @import "./modules/blocks/quote/__author-profession/quote__author-profession.scss";
 
+/* highway */
+@import "./modules/blocks/highway/highway.scss";
+@import "./modules/blocks/highway/__slider-container/highway__slider-container.scss";
+@import "./modules/blocks/highway/__slider-track/highway__slider-track.scss";
+@import "./modules/blocks/highway/__slider-item/highway__slider-item.scss";
+@import "./modules/blocks/highway/__slider-buttons/highway__slider-buttons.scss";
+@import "./modules/blocks/highway/__button-prew/highway__button-prew.scss";
+@import "./modules/blocks/highway/__button-next/highway__button-next.scss";
+
 /* bicycles */
 @import "./modules/blocks/bicycles/bicycles.scss";
 @import "./modules/blocks/bicycles/__type-list/bicycles__type-list.scss";
