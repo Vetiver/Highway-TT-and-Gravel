@@ -1,7 +1,0 @@
-.quote__title {
-  margin: 0;
-  @include font($quote-size, 600, 1.29, normal);
-  letter-spacing: -0.5px;
-  grid-area: quote-title;
-  max-width: 470px;
-}
