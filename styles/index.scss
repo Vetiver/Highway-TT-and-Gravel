@@ -29,8 +29,16 @@
 @import "./modules/blocks/description/__brand-container/description__brand-container.scss";
 @import "./modules/blocks/description/__line/description__line.scss";
 @import "./modules/blocks/description/__brand/description__brand.scss";
-@import "./modules/blocks/description/__image-forest/description__image-forest.scss";
-@import "./modules/blocks/description/__image-bicycle/description__image-bicycle.scss";
+@import "./modules/blocks/description/__background-image/description__background-image.scss";
+@import "./modules/blocks/description/__bike-fix/description__bike-fix.scss";
+
+/* quote */
+@import "./modules/blocks/quote/quote.scss";
+@import "./modules/blocks/quote/__title/quote__title.scss";
+@import "./modules/blocks/quote/__image/quote__image.scss";
+@import "./modules/blocks/quote/__caption-container/quote__caption-container.scss";
+@import "./modules/blocks/quote/__author/quote__author.scss";
+@import "./modules/blocks/quote/__author-profession/quote__author-profession.scss";
 
 /* bicycles */
 @import "./modules/blocks/bicycles/bicycles.scss";
@@ -59,42 +67,3 @@
 @import "./modules/blocks/footer/__label/_for/footer__label_for_email.scss";
 @import "./modules/blocks/footer/__theme-controller/footer__theme-controller.scss";
 @import "./modules/blocks/footer/__theme-controller-slider/footer__theme-controller-slider.scss";
-
-.quote {
-  padding-top: 120px;
-  padding-right: 120px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas:
-    "quote-image quote-title"
-    "quote-image quote-caption";
-  gap: 0 80px;
-}
-
-.quote__image {
-  grid-area: quote-image;
-}
-
-.quote__title {
-  margin: 0;
-  @include font($quote-size, 600, 1.29, normal);
-  letter-spacing: -0.5px;
-  grid-area: quote-title;
-  max-width: 470px;
-}
-
-.quote__caption-container {
-  grid-area: quote-caption;
-  align-self: end;
-}
-
-.quote__author {
-  margin: 0;
-  padding-bottom: 6px;
-  @include font(20px, 500, 1.6, normal);
-}
-.quote__author-profession {
-  margin: 0;
-  @include font(16px, 400, 1.75, normal);
-  color: $semi-gray;
-}
