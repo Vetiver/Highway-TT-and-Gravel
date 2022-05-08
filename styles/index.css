@@ -63,6 +63,11 @@
   padding-right: 120px;
   padding-top: 28px;
   padding-bottom: 28px;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background: #f4f4f4;
 }
 
 .header__navbar-list {
@@ -125,11 +130,24 @@
   list-style: none;
 }
 
+.description__brand-container {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 30px;
+  margin-top: 167px;
+}
+
+.description__line {
+  height: 2px;
+  width: 132px;
+  background: #d7d4d4;
+  align-self: center;
+}
+
 .description__brand {
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-top: 167px;
   width: 194px;
   font-size: 18px;
   font-weight: 400;
@@ -196,6 +214,7 @@
 
 .bicycles__cards-item-container {
   margin: 0;
+  cursor: pointer;
 }
 
 .bicycles__cards-list {
@@ -227,6 +246,10 @@
   filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
 }
 
+.bicycles__cards-item-image:hover {
+  filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.11));
+}
+
 .bicycles__cards-item-caption {
   font-size: 18px;
   font-weight: 600;
@@ -234,6 +257,15 @@
   font-style: normal;
   padding-left: 6px;
   padding-top: 12px;
+}
+
+.bicycles__cards-item-link {
+  text-decoration: none;
+  color: #151515;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.56;
+  font-style: normal;
 }
 
 /* training */
@@ -258,19 +290,16 @@
   align-items: flex-end;
 }
 
-.training__plan-button {
-  border: none;
-  padding: 0;
-  margin: 0;
-  background: transparent;
-  cursor: pointer;
+.training__plan-link {
+  text-decoration: none;
+  color: #151515;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.56;
   font-style: normal;
 }
 
-.training__plan-button:hover {
+.training__plan-link:hover {
   opacity: 75%;
 }
 

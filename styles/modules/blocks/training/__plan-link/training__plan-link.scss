@@ -1,0 +1,8 @@
+.training__plan-link {
+  @include resetLinkStyles($dark);
+  @include font($paragraph-size, 600, 1.56, normal);
+}
+
+.training__plan-link:hover {
+  opacity: 75%;
+}
