@@ -1,0 +1,10 @@
+.quote {
+  padding-top: 120px;
+  padding-right: 120px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "quote-image quote-title"
+    "quote-image quote-caption";
+  gap: 0 80px;
+}

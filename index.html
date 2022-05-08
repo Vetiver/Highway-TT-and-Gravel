@@ -19,10 +19,10 @@
               <a class="header__navbar-link" href="#">Покрытия и градиенты</a>
             </li>
             <li class="header__navbar-item">
-              <a class="header__navbar-link" href="#">Велосипеды</a>
+              <a class="header__navbar-link" href="#bicycles">Велосипеды</a>
             </li>
             <li class="header__navbar-item">
-              <a class="header__navbar-link" href="#">Тренировки</a>
+              <a class="header__navbar-link" href="#training">Тренировки</a>
             </li>
           </ul>
         </nav>
@@ -41,7 +41,10 @@
             <button type="button" class="description__button"
               ><span class="description__button-text">Подробнее</span></button
             >
-            <p class="description__brand">Cannondale Systemsix</p>
+            <div class="description__brand-container">
+              <p class="description__brand">Cannondale Systemsix</p>
+              <div class="description__line"></div>
+            </div>
           </div>
           <div class="description__image-block">
             <img
@@ -57,7 +60,22 @@
           />
         </section>
 
-        <section class="bicycles">
+        <section class="quote">
+          <img
+            src="./images/pictures/mountains-and-houses.png"
+            alt="поля, дома и дорога"
+            class="quote__image"
+          />
+          <h2 class="quote__title">
+            «Катайся много или мало, долго или коротко, как хочешь - но катайся»
+          </h2>
+          <div class="quote__caption-container">
+            <p class="quote__author">Эдди Меркс</p>
+            <p class="quote__author-profession">Велогонщик</p>
+          </div>
+        </section>
+
+        <section class="bicycles" id="bicycles">
           <h2 class="subtitle">Велосипеды</h2>
           <ul class="bicycles__type-list">
             <li class="bicycles__type-item">
@@ -81,47 +99,65 @@
 
           <ul class="bicycles__cards-list">
             <li class="bicycles__cards-item">
-              <figure class="bicycles__cards-item-container">
-                <img
-                  class="bicycles__cards-item-image"
-                  src="./images/bicycles/Cervelo-Caledonia-5.png"
-                  alt="Велосипед для шоссе черный"
-                />
-                <figcaption class="bicycles__cards-item-caption">
-                  Cervelo Caledonia-5
-                </figcaption>
-              </figure>
+              <a
+                class="bicycles__cards-item-link"
+                href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN "
+                target="_blank"
+              >
+                <figure class="bicycles__cards-item-container">
+                  <img
+                    class="bicycles__cards-item-image"
+                    src="./images/bicycles/Cervelo-Caledonia-5.png"
+                    alt="Велосипед для шоссе черный"
+                  />
+                  <figcaption class="bicycles__cards-item-caption">
+                    Cervelo Caledonia-5
+                  </figcaption>
+                </figure>
+              </a>
             </li>
 
             <li class="bicycles__cards-item">
-              <figure class="bicycles__cards-item-container">
-                <img
-                  class="bicycles__cards-item-image"
-                  src="./images/bicycles/Cannondale-Systemsix-Himod.png"
-                  alt="Велосипед для шоссе синий с розовыми элементами"
-                />
-                <figcaption class="bicycles__cards-item-caption">
-                  Cannondale Systemsix Himod
-                </figcaption>
-              </figure>
+              <a
+                class="bicycles__cards-item-link"
+                href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J"
+                target="_blank"
+              >
+                <figure class="bicycles__cards-item-container">
+                  <img
+                    class="bicycles__cards-item-image"
+                    src="./images/bicycles/Cannondale-Systemsix-Himod.png"
+                    alt="Велосипед для шоссе синий с розовыми элементами"
+                  />
+                  <figcaption class="bicycles__cards-item-caption">
+                    Cannondale Systemsix Himod
+                  </figcaption>
+                </figure>
+              </a>
             </li>
 
             <li class="bicycles__cards-item">
-              <figure class="bicycles__cards-item-container">
-                <img
-                  class="bicycles__cards-item-image"
-                  src="./images/bicycles/Trek-Domane-SL-7.png"
-                  alt="Велосипед для шоссе темно-бирюзовый"
-                />
-                <figcaption class="bicycles__cards-item-caption">
-                  Trek Domane SL-7</figcaption
-                >
-              </figure>
+              <a
+                class="bicycles__cards-item-link"
+                href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF"
+                target="_blank"
+              >
+                <figure class="bicycles__cards-item-container">
+                  <img
+                    class="bicycles__cards-item-image"
+                    src="./images/bicycles/Trek-Domane-SL-7.png"
+                    alt="Велосипед для шоссе темно-бирюзовый"
+                  />
+                  <figcaption class="bicycles__cards-item-caption">
+                    Trek Domane SL-7</figcaption
+                  >
+                </figure>
+              </a>
             </li>
           </ul>
         </section>
 
-        <section class="training">
+        <section class="training" id="training">
           <h2 class="subtitle">Тренировки</h2>
           <p class="text-content">
             Чтобы найти маршрут для тренировки можно воспользоваться сервисом
@@ -130,10 +166,22 @@
           </p>
           <ul class="training__plan-list">
             <li class="training__plan-item">
-              <button class="training__plan-button">Strava</button>
+              <a
+                class="training__plan-link"
+                href="https://www.strava.com"
+                target="_blank"
+              >
+                Strava
+              </a>
             </li>
             <li class="training__plan-item">
-              <button class="training__plan-button">Komoot</button>
+              <a
+                class="training__plan-link"
+                href="https://www.komoot.com"
+                target="_blank"
+              >
+                Komoot
+              </a>
             </li>
           </ul>
           <img

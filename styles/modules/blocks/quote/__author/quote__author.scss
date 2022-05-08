@@ -1,0 +1,5 @@
+.quote__author {
+  margin: 0;
+  padding-bottom: 6px;
+  @include font(20px, 500, 1.6, normal);
+}
