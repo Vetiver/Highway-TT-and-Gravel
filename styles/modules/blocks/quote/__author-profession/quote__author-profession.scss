@@ -3,3 +3,9 @@
   @include font(16px, 400, 1.75, normal);
   color: $semi-gray;
 }
+
+@media screen and (max-width: $tablet) {
+  .quote__author-profession {
+    @include font(10px, 400, 1.6, normal);
+  }
+}

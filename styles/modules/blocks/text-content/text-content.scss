@@ -5,3 +5,16 @@
   grid-area: paragraph;
   color: $semi-gray;
 }
+
+@media screen and (max-width: 920px) {
+  .text-content {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .text-content {
+    margin: 0;
+    @include font(12px, 400, 1.5, normal);
+  }
+}

@@ -5,3 +5,9 @@
   grid-area: quote-title;
   max-width: 470px;
 }
+
+@media screen and (max-width: $tablet) {
+  .quote__title {
+    @include font(23px, 600, 1.26, normal);
+  }
+}

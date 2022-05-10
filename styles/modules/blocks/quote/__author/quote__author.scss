@@ -3,3 +3,10 @@
   padding-bottom: 6px;
   @include font(20px, 500, 1.6, normal);
 }
+
+@media screen and (max-width: $tablet) {
+  .quote__author {
+    padding-bottom: 4px;
+    @include font($navbar-size, 500, 1.57, normal);
+  }
+}

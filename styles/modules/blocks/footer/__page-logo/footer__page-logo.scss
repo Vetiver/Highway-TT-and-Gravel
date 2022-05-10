@@ -1,0 +1,12 @@
+.footer__page-logo {
+  display: none;
+}
+
+@media screen and(max-width: 400px) {
+  .footer__page-logo {
+    display: block;
+    width: 38px;
+    height: 38px;
+    grid-area: page-logo;
+  }
+}

@@ -1,11 +1,17 @@
 .footer__switch-container {
-  display: grid;
-  justify-content: space-between;
-  align-items: center;
   padding-bottom: 8px;
-  max-width: 135px;
-  grid-area: switcher;
-  justify-self: flex-end;
+  display: grid;
   grid-template-columns: repeat(3, auto);
+  grid-area: switcher;
+  align-items: center;
+  max-width: 135px;
+  justify-self: flex-end;
+  justify-content: space-between;
   gap: 22px;
+}
+
+@media screen and(max-width: 400px) {
+  .footer__switch-container {
+    display: none;
+  }
 }

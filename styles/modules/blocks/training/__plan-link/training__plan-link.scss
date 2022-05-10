@@ -6,3 +6,9 @@
 .training__plan-link:hover {
   opacity: 75%;
 }
+
+@media screen and (max-width: 400px) {
+  .training__plan-link {
+    @include font($navbar-size, 600, 1.43, normal);
+  }
+}
