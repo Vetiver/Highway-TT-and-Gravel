@@ -44,12 +44,24 @@
 
 /* title */
 .title {
+  margin: 80px 0 0;
   max-width: 460px;
   font-size: 55px;
   font-weight: 700;
   line-height: 1.09;
   font-style: normal;
-  margin: 80px 0 0;
+  letter-spacing: -0.5px;
+  grid-area: title;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.25;
+    font-style: normal;
+  }
 }
 
 /* subtitle */
@@ -106,6 +118,25 @@
   background: #f4f4f4;
 }
 
+.header__navbar-menu {
+  display: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .header__navbar-menu {
+    display: block;
+    margin-left: auto;
+    background: url(../../../../images/logos/burger-menu.svg) no-repeat;
+    width: 22px;
+    height: 20px;
+  }
+}
+
 .header__navbar-list {
   padding: 0;
   margin: 0;
@@ -119,6 +150,12 @@
   font-style: normal;
   color: #151515;
   text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .header__navbar-list {
+    display: none;
+  }
 }
 
 .header__navbar-item {
@@ -136,20 +173,44 @@
 
 /* description */
 .description {
-  display: flex;
-  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto 1fr;
+  grid-template-areas: "title description-image" "paragraph description-image" "more-button description-image" "bike-model description-image";
   background: #f4f4f4;
-  display: none;
+  gap: 50px 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  .description {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "title" "description-image" "paragraph" "more-button";
+    gap: 50px 0;
+    justify-content: center;
+  }
 }
 
 .description__button {
-  margin-top: 50px;
   width: 180px;
   height: 50px;
   border: none;
   background: #24b47e;
   border-radius: 4px;
   cursor: pointer;
+  grid-area: more-button;
+}
+
+@media screen and (max-width: 1000px) {
+  .description__button {
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .description__button {
+    width: 100%;
+  }
 }
 
 .description__button-text {
@@ -170,14 +231,20 @@
   display: grid;
   grid-template-columns: repeat(2, max-content);
   gap: 30px;
-  margin-top: 167px;
+  align-items: center;
+  grid-area: bike-model;
+}
+
+@media screen and (max-width: 1000px) {
+  .description__brand-container {
+    display: none;
+  }
 }
 
 .description__line {
   height: 2px;
   width: 132px;
   background: #d7d4d4;
-  align-self: center;
 }
 
 .description__brand {
@@ -191,24 +258,71 @@
   font-style: normal;
 }
 
+.description__images-block {
+  grid-area: description-image;
+  position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+  .description__images-block {
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .description__images-block {
+    padding-left: 30px;
+  }
+}
+
 .description__background-image {
-  width: 610px;
-  height: 836px;
-  margin-left: 248px;
+  max-width: 610px;
+  width: 100%;
   margin-top: 20px;
   display: block;
 }
 
+@media screen and (max-width: 768px) {
+  .description__background-image {
+    max-width: 100%;
+    margin-top: 0;
+  }
+}
+
 .description__bike-fix {
   position: absolute;
-  max-width: 340px;
-  max-height: 260px;
+  max-width: 440px;
+  max-height: 300px;
+  width: 25vw;
   padding: 20px 50px;
   background: #f4f4f4;
-  left: 630px;
-  top: 400px;
+  right: 58%;
+  top: 53%;
   box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
   border-radius: 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1300px) {
+  .description__bike-fix {
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .description__bike-fix {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .description__bike-fix {
+    padding: 10px 25px;
+    min-width: 234px;
+    min-height: 160px;
+    left: 1%;
+    top: 46%;
+  }
 }
 
 /* quote */
@@ -316,11 +430,10 @@
 /* highway */
 .highway {
   margin-top: 60px;
-  border: 1px solid pink;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px 0;
-  grid-template-areas: "subtitle ." "paragraph ." "slider-container slider-container" "slider-buttons .";
+  grid-template-areas: "subtitle ." "paragraph paragraph" "slider-container slider-container" "slider-buttons .";
 }
 
 @media screen and (max-width: 768px) {
@@ -448,9 +561,14 @@
   gap: 120px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .bicycles {
     padding: 40px 0 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bicycles {
     border-top: 1px solid #e3e3e3;
     gap: 20px 0;
     grid-template-columns: 1fr;

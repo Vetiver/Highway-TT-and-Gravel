@@ -18,6 +18,7 @@
 
 /* header */
 @import "./modules/blocks/header/header.scss";
+@import "./modules/blocks/header/__navbar-menu/header__navbar-menu.scss";
 @import "./modules/blocks/header/__navbar-list/header__navbar-list.scss";
 @import "./modules/blocks/header/__navbar-item/header__navbar-item.scss";
 @import "./modules/blocks/header/__navbar-link/header__navbar-link.scss";
@@ -29,6 +30,7 @@
 @import "./modules/blocks/description/__brand-container/description__brand-container.scss";
 @import "./modules/blocks/description/__line/description__line.scss";
 @import "./modules/blocks/description/__brand/description__brand.scss";
+@import "./modules/blocks/description/__images-block/description__images-block.scss";
 @import "./modules/blocks/description/__background-image/description__background-image.scss";
 @import "./modules/blocks/description/__bike-fix/description__bike-fix.scss";
 

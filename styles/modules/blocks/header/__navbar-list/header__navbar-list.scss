@@ -5,3 +5,9 @@
   color: $dark;
   text-align: right;
 }
+
+@media screen and (max-width: $tablet) {
+  .header__navbar-list {
+    display: none;
+  }
+}

@@ -1,6 +1,26 @@
 .description {
-  display: flex;
-  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto 1fr;
+  grid-template-areas:
+    "title description-image"
+    "paragraph description-image"
+    "more-button description-image"
+    "bike-model description-image";
   background: #f4f4f4;
-  display: none;
+  gap: 50px 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  .description {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "title"
+      "description-image"
+      "paragraph"
+      "more-button";
+    gap: 50px 0;
+    justify-content: center;
+  }
 }
