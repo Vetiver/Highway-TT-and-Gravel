@@ -1,0 +1,19 @@
+.bicycles__select-type {
+  display: none;
+}
+
+@media screen and (max-width: $tablet) {
+  .bicycles__select-type {
+    display: block;
+    grid-area: select-type;
+    max-width: fit-content;
+    background: $transparent;
+    border: 1px solid #e3e3e3;
+    border-radius: 2px;
+    padding: 8px 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @include font(11px, 600, 1.27, normal);
+    cursor: pointer;
+  }
+}

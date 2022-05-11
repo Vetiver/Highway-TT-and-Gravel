@@ -1,0 +1,8 @@
+.bicycles__card-item-indicators {
+  @include resetListStyles();
+  @include flex(space-between, center);
+  width: 22px;
+  grid-area: indicator-dots;
+  padding-bottom: 40px;
+  justify-self: center;
+}

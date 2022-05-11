@@ -78,31 +78,34 @@
         <section class="highway">
           <h2 class="subtitle">Шоссе</h2>
           <p class="text-content"
-            >На шоссейном велосипеде можно ездить по асфальту на разных
+            >На шоссейном велосипеде можно ездить по асфальту&nbsp;на разных
             градиентах: будь то горы или равнины. Гонки проходят в командном
-            пелотоне, но тренироваться можно и самостоятельно.</p
+            пелотоне, но&nbsp;тренироваться можно и самостоятельно.</p
           >
           <div class="highway__slider-container">
-            <div class="highway__slider-track">
-              <div class="highway__slider-item"
-                ><img
+            <ul class="highway__slider-track">
+              <li class="highway__slider-item">
+                <img
                   src="./images/pictures/road-anf-mountains.png"
                   alt="road-anf-mountains"
                   class="highway__slider-image"
-              /></div>
-              <div class="highway__slider-item"
-                ><img
+                />
+              </li>
+              <li class="highway__slider-item">
+                <img
                   src="./images/pictures/road-in-the-woods.png"
                   alt="road-anf-mountains"
                   class="highway__slider-image"
-              /></div>
-              <div class="highway__slider-item"
-                ><img
+                />
+              </li>
+              <li class="highway__slider-item">
+                <img
                   src="./images/pictures/road-and-plain.png"
-                  alt="road-anf-mountains"
+                  alt="road and mountains"
                   class="highway__slider-image"
-              /></div>
-            </div>
+                />
+              </li>
+            </ul>
           </div>
           <div class="highway__slider-buttons">
             <button class="highway__button-prew"></button>
@@ -131,6 +134,20 @@
               </button>
             </li>
           </ul>
+
+          <select
+            class="bicycles__select-type"
+            name="select-bicycle-type"
+            id="bicycle-type"
+          >
+            <option class="bicycles__select-type-item" value="Highway"
+              >Шоссе</option
+            >
+            <option class="bicycles__select-type-item" value="gravel">
+              Грэвел
+            </option>
+            <option class="bicycles__select-type-item" value="TT">TT</option>
+          </select>
 
           <ul class="bicycles__cards-list">
             <li class="bicycles__cards-item">
@@ -189,6 +206,15 @@
                 </figure>
               </a>
             </li>
+          </ul>
+          <ul class="bicycles__card-item-indicators">
+            <li class="bicycles__card-item-indicator"></li>
+            <li
+              class="bicycles__card-item-indicator bicycles__card-item-indicator_non-active"
+            ></li>
+            <li
+              class="bicycles__card-item-indicator bicycles__card-item-indicator_non-active"
+            ></li>
           </ul>
         </section>
 

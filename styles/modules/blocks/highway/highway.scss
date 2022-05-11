@@ -1,7 +1,22 @@
 .highway {
   border: 1px solid pink;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 40px;
+  grid-template-areas:
+    "subtitle ."
+    "paragraph ."
+    "slider-container slider-container"
+    "slider-buttons .";
   margin-top: 60px;
   display: none;
+}
+
+@media screen and (max-width: $mobile) {
+  .highway {
+    grid-template-areas:
+      "subtitle slider-buttons"
+      "slider-container slider-container"
+      "paragraph .";
+  }
 }

@@ -53,12 +53,17 @@
 @import "./modules/blocks/bicycles/bicycles.scss";
 @import "./modules/blocks/bicycles/__type-list/bicycles__type-list.scss";
 @import "./modules/blocks/bicycles/__type-button/bicycles__type-button.scss";
+@import "./modules/blocks/bicycles/__cards-item/bicycles__cards-item.scss";
 @import "./modules/blocks/bicycles/__cards-item-container/bicycles__cards-item-container.scss";
 @import "./modules/blocks/bicycles/__cards-list/bicycles__cards-list.scss";
 @import "./modules/blocks/bicycles/__type-button/__type-button_non-active/bicycles__type-button_non-active.scss";
 @import "./modules/blocks/bicycles/__cards-item-image/bicycles__cards-item-image.scss";
 @import "./modules/blocks/bicycles/__cards-item-caption/bicycles__cards-item-caption.scss";
 @import "./modules/blocks/bicycles/__cards-item-link/bicycles__cards-item-link.scss";
+@import "./modules/blocks/bicycles/__select-type/bicycles__select-type.scss";
+@import "./modules/blocks/bicycles/__card-item-indicators/bicycles__card-item-indicators.scss";
+@import "./modules/blocks/bicycles/__card-item-indicator/bicycles__card-item-indicator.scss";
+@import "./modules/blocks/bicycles/__card-item-indicator/_non-active/bicycles__card-item-indicator_non-active.scss";
 
 /* training */
 @import "./modules/blocks/training/training.scss";

@@ -1,4 +1,14 @@
 .highway__slider-item {
   min-width: 650px;
-  height: 400px;
+}
+
+@media screen and (max-width: $mobile) {
+  .highway__slider-item {
+    width: 100%;
+  }
+
+  .highway__slider-item:nth-child(2),
+  .highway__slider-item:nth-child(3) {
+    display: none;
+  }
 }
