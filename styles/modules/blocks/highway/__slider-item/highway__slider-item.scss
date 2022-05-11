@@ -1,12 +1,8 @@
 .highway__slider-item {
-  min-width: 650px;
+  max-width: 650px;
 }
 
-@media screen and (max-width: $mobile) {
-  .highway__slider-item {
-    width: 100%;
-  }
-
+@media screen and (max-width: 1000px) {
   .highway__slider-item:nth-child(2),
   .highway__slider-item:nth-child(3) {
     display: none;

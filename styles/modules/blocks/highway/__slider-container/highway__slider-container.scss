@@ -1,5 +1,12 @@
 .highway__slider-container {
-  margin-top: 80px;
+  padding-top: 30px;
   overflow: hidden;
   grid-area: slider-container;
+}
+
+@media screen and (max-width: 1000px) {
+  .highway__slider-container {
+    justify-self: center;
+    padding: 0;
+  }
 }
