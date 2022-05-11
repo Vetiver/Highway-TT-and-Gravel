@@ -8,3 +8,9 @@
   align-items: end;
   justify-self: end;
 }
+
+@media screen and (max-width: $tablet) {
+  .bicycles__type-list {
+    display: none;
+  }
+}

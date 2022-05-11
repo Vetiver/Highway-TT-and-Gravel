@@ -1,4 +1,10 @@
 .highway__slider-item {
-  min-width: 650px;
-  height: 400px;
+  max-width: 650px;
+}
+
+@media screen and (max-width: 1000px) {
+  .highway__slider-item:nth-child(2),
+  .highway__slider-item:nth-child(3) {
+    display: none;
+  }
 }

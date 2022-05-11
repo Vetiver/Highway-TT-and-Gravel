@@ -1,11 +1,35 @@
 .description__bike-fix {
   position: absolute;
-  max-width: 340px;
-  max-height: 260px;
+  max-width: 440px;
+  max-height: 300px;
+  width: 25vw;
   padding: 20px 50px;
   background: $snow;
-  left: 630px;
-  top: 400px;
+  right: 58%;
+  top: 53%;
   box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
   border-radius: 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1300px) {
+  .description__bike-fix {
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .description__bike-fix {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .description__bike-fix {
+    padding: 10px 25px;
+    min-width: 234px;
+    min-height: 160px;
+    left: 1%;
+    top: 46%;
+  }
 }

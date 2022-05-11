@@ -7,3 +7,22 @@
     "cards cards";
   gap: 120px;
 }
+
+@media screen and (max-width: 1000px) {
+  .bicycles {
+    padding: 40px 0 0;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .bicycles {
+    border-top: 1px solid #e3e3e3;
+    gap: 20px 0;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "subtitle"
+      "select-type"
+      "cards"
+      "indicator-dots";
+  }
+}

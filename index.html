@@ -14,6 +14,7 @@
     <div class="page__container">
       <header class="header">
         <nav class="header__navbar">
+          <button class="header__navbar-menu"></button>
           <ul class="header__navbar-list">
             <li class="header__navbar-item">
               <a class="header__navbar-link" href="#">Покрытия и градиенты</a>
@@ -31,33 +32,35 @@
 
       <main class="content">
         <section class="description">
-          <div class="description__info-block">
-            <h1 class="title">Шоссе, ТТ и&nbsp;Грэвел</h1>
-            <p class="text-content"
-              >Триатлонные старты, горные серпантины или грейвел&nbsp;заезды по
-              живописным маршрутам – нужно&nbsp;только определиться с выбором
-              велосипеда&nbsp;и&nbsp;отправиться в путь.</p
-            >
-            <button type="button" class="description__button"
-              ><span class="description__button-text">Подробнее</span></button
-            >
-            <div class="description__brand-container">
-              <p class="description__brand">Cannondale Systemsix</p>
-              <div class="description__line"></div>
-            </div>
+          <h1 class="title">Шоссе, ТТ и&nbsp;Грэвел</h1>
+
+          <p class="text-content">
+            Триатлонные старты, горные серпантины или грейвел&nbsp;заезды по
+            живописным маршрутам – нужно&nbsp;только определиться с выбором
+            велосипеда&nbsp;и&nbsp;отправиться в путь.
+          </p>
+
+          <button type="button" class="description__button">
+            <span class="description__button-text"> Подробнее </span>
+          </button>
+
+          <div class="description__brand-container">
+            <p class="description__brand">Cannondale Systemsix</p>
+            <div class="description__line"></div>
           </div>
-          <div class="description__image-block">
+
+          <div class="description__images-block">
             <img
               src="./images/pictures/wood-and-road.png"
               alt="wood-and-road"
               class="description__background-image"
             />
+            <img
+              src="./images/bicycles/img-for-info.png"
+              alt="Cannondale-Systemsix-Himod"
+              class="description__bike-fix"
+            />
           </div>
-          <img
-            src="./images/bicycles/img-for-info.png"
-            alt="Cannondale-Systemsix-Himod"
-            class="description__bike-fix"
-          />
         </section>
 
         <section class="quote">
@@ -77,17 +80,38 @@
 
         <section class="highway">
           <h2 class="subtitle">Шоссе</h2>
-          <p class="text-content">На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.</p>
+          <p class="text-content"
+            >На шоссейном велосипеде можно ездить по асфальту&nbsp;на разных
+            градиентах: будь то горы или&nbsp;равнины. Гонки проходят в
+            командном пелотоне, но&nbsp;тренироваться можно и самостоятельно.</p
+          >
           <div class="highway__slider-container">
-            <div class="highway__slider-track">
-              <div class="highway__slider-item"><img src="./images/pictures/road-anf-mountains.png" alt="road-anf-mountains" class="highway__slider-image"></div>
-              <div class="highway__slider-item"><img src="./images/pictures/road-in-the-woods.png" alt="road-anf-mountains" class="highway__slider-image"></div>
-              <div class="highway__slider-item"><img src="./images/pictures/road-and-plain.png" alt="road-anf-mountains" class="highway__slider-image"></div>
-
-            </div>
+            <ul class="highway__slider-track">
+              <li class="highway__slider-item">
+                <img
+                  src="./images/pictures/road-anf-mountains.png"
+                  alt="road-anf-mountains"
+                  class="highway__slider-image"
+                />
+              </li>
+              <li class="highway__slider-item">
+                <img
+                  src="./images/pictures/road-in-the-woods.png"
+                  alt="road-anf-mountains"
+                  class="highway__slider-image"
+                />
+              </li>
+              <li class="highway__slider-item">
+                <img
+                  src="./images/pictures/road-and-plain.png"
+                  alt="road and mountains"
+                  class="highway__slider-image"
+                />
+              </li>
+            </ul>
           </div>
           <div class="highway__slider-buttons">
-            <button class="highway__button-prew"></button>
+            <button class="highway__button-prev"></button>
             <button class="highway__button-next"></button>
           </div>
         </section>
@@ -113,6 +137,20 @@
               </button>
             </li>
           </ul>
+
+          <select
+            class="bicycles__select-type"
+            name="select-bicycle-type"
+            id="bicycle-type"
+          >
+            <option class="bicycles__select-type-item" value="Highway"
+              >Шоссе</option
+            >
+            <option class="bicycles__select-type-item" value="gravel">
+              Грэвел
+            </option>
+            <option class="bicycles__select-type-item" value="TT">TT</option>
+          </select>
 
           <ul class="bicycles__cards-list">
             <li class="bicycles__cards-item">
@@ -172,6 +210,15 @@
               </a>
             </li>
           </ul>
+          <ul class="bicycles__card-item-indicators">
+            <li class="bicycles__card-item-indicator"></li>
+            <li
+              class="bicycles__card-item-indicator bicycles__card-item-indicator_non-active"
+            ></li>
+            <li
+              class="bicycles__card-item-indicator bicycles__card-item-indicator_non-active"
+            ></li>
+          </ul>
         </section>
 
         <section class="training" id="training">
@@ -222,6 +269,11 @@
           />
         </label>
         <p class="footer__copyright">&copy; Road Club 2021</p>
+        <img
+          src="./images/logos/strange-round.svg"
+          alt="логотип сайта"
+          class="footer__page-logo"
+        />
         <div class="footer__switch-container">
           <img
             src="./images/logos/sun.svg"

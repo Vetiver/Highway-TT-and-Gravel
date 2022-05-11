@@ -2,10 +2,26 @@
   background: $lightGray;
   padding: 80px 120px 60px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr auto;
   grid-template-areas:
     "footer-title ."
     "email ."
     "copyright switcher";
   gap: 50px;
+}
+
+@media screen and(max-width: $tablet) {
+  .footer {
+    padding: 23px 18px 25px;
+    gap: 40px 0;
+  }
+}
+
+@media screen and(max-width: 400px) {
+  .footer {
+    grid-template-areas:
+      "footer-title footer-title"
+      "email email"
+      "copyright page-logo";
+  }
 }

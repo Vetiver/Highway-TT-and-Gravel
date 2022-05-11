@@ -1,9 +1,21 @@
 .description__button {
-  margin-top: 50px;
   width: 180px;
   height: 50px;
   border: none;
   background: #24b47e;
   border-radius: 4px;
   cursor: pointer;
+  grid-area: more-button;
+}
+
+@media screen and (max-width: 1000px) {
+  .description__button {
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .description__button {
+    width: 100%;
+  }
 }

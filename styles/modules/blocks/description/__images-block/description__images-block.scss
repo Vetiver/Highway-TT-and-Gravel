@@ -1,0 +1,16 @@
+.description__images-block {
+  grid-area: description-image;
+  position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+  .description__images-block {
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .description__images-block {
+    padding-left: 30px;
+  }
+}
