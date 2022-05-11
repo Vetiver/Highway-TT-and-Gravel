@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,sBAAsB,CAAC;EACrB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;CACd",
-    "sources": [
-        "highway__slider-image.scss"
-    ],
-    "names": [],
-    "file": "highway__slider-image.css"
-}
