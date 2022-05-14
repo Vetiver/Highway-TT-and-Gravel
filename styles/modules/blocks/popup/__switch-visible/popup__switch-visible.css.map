@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,sBAAsB,CAAC;EACrB,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,KAAK;CAClB",
+    "sources": [
+        "popup__switch-visible.scss"
+    ],
+    "names": [],
+    "file": "popup__switch-visible.css"
+}
