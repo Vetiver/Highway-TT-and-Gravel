@@ -8,6 +8,8 @@
     <meta name="author" content="Дмитрий Сережкин, Вероника Антончик" />
     <link rel="icon" type="image/svg" href="./images/logos/strange-round.svg" />
     <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./vendors/normalize.css" />
+    <link rel="stylesheet" href="./vendors/fonts/fonts.css" />
     <title>Велосипеды</title>
   </head>
   <body class="page">
@@ -17,7 +19,9 @@
           <button class="header__navbar-menu"></button>
           <ul class="header__navbar-list">
             <li class="header__navbar-item">
-              <a class="header__navbar-link" href="#">Покрытия и градиенты</a>
+              <a class="header__navbar-link" href="#surface"
+                >Покрытия и градиенты</a
+              >
             </li>
             <li class="header__navbar-item">
               <a class="header__navbar-link" href="#bicycles">Велосипеды</a>
@@ -78,7 +82,7 @@
           </div>
         </section>
 
-        <section class="highway">
+        <section class="highway" id="surface">
           <h2 class="subtitle">Шоссе</h2>
           <p class="text-content"
             >На шоссейном велосипеде можно ездить по асфальту&nbsp;на разных
@@ -298,14 +302,27 @@
         </div>
       </footer>
       <!-- /.footer -->
+
       <div class="popup">
         <div class="popup__container">
           <button class="popup__close-button" type="button"></button>
           <div class="popup__text-block">
-          <a class="header__navbar-link popup__text-decoration" href="#">Покрытия и градиенты</a>
-          <a class="header__navbar-link popup__text-decoration" href="#bicycles">Велосипеды</a>
-          <a class="header__navbar-link popup__text-decoration" href="#training">Тренировки</a>
-        </div>
+            <a
+              class="header__navbar-link popup__text-decoration"
+              href="#surface"
+              >Покрытия и градиенты</a
+            >
+            <a
+              class="header__navbar-link popup__text-decoration"
+              href="#bicycles"
+              >Велосипеды</a
+            >
+            <a
+              class="header__navbar-link popup__text-decoration"
+              href="#training"
+              >Тренировки</a
+            >
+          </div>
           <div class="footer__switch-container popup__switch-visible">
             <img
               src="./images/logos/sun.svg"

@@ -17,12 +17,6 @@ items.forEach((item) => {
 
 
 
-
-
-
-
-
-
 const page = document.querySelector('.page');
 const head = document.querySelector('.header');
 const headerLink = document.querySelectorAll('.header__navbar-link');
@@ -232,13 +226,14 @@ controller.forEach(target => {
   const closePopup = document.querySelector('.popup__close-button');
   const popup = document.querySelector('.popup');
   const popupVisible = document.querySelector('.popup__switch-visible');
+  const menuItems = popup.querySelectorAll('.popup__text-block');
 
-  burgerButton.addEventListener('click', (evt)=>{
+  burgerButton.addEventListener('click', (evt) => {
     popup.classList.add('popup_open');
     popupVisible.style.display = 'grid';
   })
 
-  closePopup.addEventListener('click', (evt)=>{
+  closePopup.addEventListener('click', (evt) => {
     popup.classList.remove('popup_open');
     popupVisible.style.display = 'none';
   })
