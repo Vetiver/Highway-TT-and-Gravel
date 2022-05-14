@@ -17,6 +17,12 @@ items.forEach((item) => {
 
 
 
+
+
+
+
+
+
 const page = document.querySelector('.page');
 const head = document.querySelector('.header');
 const headerLink = document.querySelectorAll('.header__navbar-link');
@@ -28,15 +34,19 @@ const buttonPrew = document.querySelector('.highway__button-prev');
 const itemCaption = document.querySelectorAll('.bicycles__cards-item-caption');
 const footer = document.querySelector('.footer');
 const copyright = document.querySelector('.footer__copyright');
-const controller = document.querySelector('.footer__theme-controller');
+const controller = document.querySelectorAll('.footer__theme-controller');
+const popupContainer = document.querySelector('.popup__container');
 
-controller.addEventListener('change', (evt) => {
-    if(controller.checked) {
+controller.forEach(target => {
+  target.addEventListener('change', (evt) => {
+    if(target.checked) {
       darkAdd();
     } else {
       darkClose();
     }
   });
+})
+
 
   function darkAdd() {
     page.classList.add('page_dark');
@@ -62,6 +72,7 @@ controller.addEventListener('change', (evt) => {
     });
     footer.style.background = '#2F2F2F';
     copyright.style.color = '#565656';
+    popupContainer.style.background = '#333333';
   };
 
   function darkClose() {
@@ -88,6 +99,7 @@ controller.addEventListener('change', (evt) => {
     });
     footer.style.background = '#efefef';
     copyright.style.color = '#CFCFCF';
+    popupContainer.style.background = '#F4F4F4'
   };
 
   /*------------------------------------------------------------Добавление темной темы---------------------------------------------------------------*/
@@ -214,3 +226,19 @@ controller.addEventListener('change', (evt) => {
       }
     })
   }
+
+
+  const burgerButton = document.querySelector('.header__navbar-menu');
+  const closePopup = document.querySelector('.popup__close-button');
+  const popup = document.querySelector('.popup');
+  const popupVisible = document.querySelector('.popup__switch-visible');
+
+  burgerButton.addEventListener('click', (evt)=>{
+    popup.classList.add('popup_open');
+    popupVisible.style.display = 'grid';
+  })
+
+  closePopup.addEventListener('click', (evt)=>{
+    popup.classList.remove('popup_open');
+    popupVisible.style.display = 'none';
+  })

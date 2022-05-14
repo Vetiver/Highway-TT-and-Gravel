@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,oBAAoB,CAAC;EACnB,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,CAAC;EACN,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,0CAA0C,CAAC,SAAS,CAAC,MAAM,CAAC,MAAM;EAC9E,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,CAAC;EACV,eAAe,EAAE,OAAO;EACxB,MAAM,EAAE,CAAC;EACT,MAAM,EAAE,CAAC;EACT,MAAM,EAAE,OAAO;CAChB",
+    "sources": [
+        "popup__close-button.scss"
+    ],
+    "names": [],
+    "file": "popup__close-button.css"
+}

@@ -86,3 +86,12 @@
 @import "./modules/blocks/footer/__label/_for/footer__label_for_email.scss";
 @import "./modules/blocks/footer/__theme-controller/footer__theme-controller.scss";
 @import "./modules/blocks/footer/__theme-controller-slider/footer__theme-controller-slider.scss";
+
+/* popup */
+@import "./modules/blocks/popup/popup.scss";
+@import "./modules/blocks/popup/_open/popup_open.scss";
+@import "./modules/blocks/popup/__container/popup__container.scss";
+@import "./modules/blocks/popup/__close-button/popup__close-button.scss";
+@import "./modules/blocks/popup/__text-block/popup__text-block.scss";
+@import "./modules/blocks/popup/__text-decoration/popup__text-decoration.scss";
+@import "./modules/blocks/popup/__switch-visible/popup__switch-visible.scss";

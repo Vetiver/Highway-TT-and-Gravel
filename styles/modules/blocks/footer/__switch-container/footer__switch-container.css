@@ -1,0 +1,24 @@
+.footer__switch-container {
+  padding-bottom: 8px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  grid-area: switcher;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 135px;
+  justify-self: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 22px;
+}
+
+@media screen and (max-width: 400px) {
+  .footer__switch-container {
+    display: none;
+  }
+}
+/*# sourceMappingURL=footer__switch-container.css.map */
