@@ -1,0 +1,41 @@
+.training {
+  padding-top: 150px;
+  padding-bottom: 120px;
+  padding-right: 120px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "subtitle training-image"
+    "paragraph training-image"
+    "training-buttons training-image";
+}
+
+@media screen and (max-width: 1024px) {
+  .training {
+    max-width: 928px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .training {
+    grid-template-columns: 1fr;
+    max-width: 720px;
+    grid-template-areas:
+      "subtitle"
+      "training-image"
+      "paragraph"
+      "training-buttons";
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .training {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    border-top: 1px solid #e3e3e3;
+  }
+}

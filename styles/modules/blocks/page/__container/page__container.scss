@@ -1,0 +1,20 @@
+.page__container > .header,
+.page__container > .content {
+  padding-left: 120px;
+}
+
+@media screen and(max-width: 1024px) {
+  .page__container > .header,
+  .page__container > .content {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media screen and(max-width: $tablet) {
+  .page__container > .header,
+  .page__container > .content {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}

@@ -1,0 +1,13 @@
+.description__brand-container {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 30px;
+  align-items: center;
+  grid-area: bike-model;
+}
+
+@media screen and (max-width: 1000px) {
+  .description__brand-container {
+    display: none;
+  }
+}

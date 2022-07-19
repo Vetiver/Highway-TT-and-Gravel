@@ -1,0 +1,8 @@
+.description__button-text {
+  width: 160px;
+  color: $white;
+  text-align: center;
+  letter-spacing: 1px;
+  @include font(14px, 600, 1.28, normal);
+  @include resetListStyles();
+}

@@ -1,0 +1,9 @@
+.highway__slider-image {
+  display: block;
+}
+
+@media screen and (max-width: 1000px) {
+  .highway__slider-image {
+    width: 100%;
+  }
+}

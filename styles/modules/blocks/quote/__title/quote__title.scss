@@ -1,0 +1,13 @@
+.quote__title {
+  margin: 0;
+  @include font($quote-size, 600, 1.29, normal);
+  letter-spacing: -0.5px;
+  grid-area: quote-title;
+  max-width: 470px;
+}
+
+@media screen and (max-width: $tablet) {
+  .quote__title {
+    @include font(23px, 600, 1.26, normal);
+  }
+}

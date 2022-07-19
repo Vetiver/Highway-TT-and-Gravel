@@ -1,0 +1,4 @@
+.bicycles__cards-item-link {
+  @include resetLinkStyles($dark);
+  @include font($paragraph-size, 600, 1.56, normal);
+}

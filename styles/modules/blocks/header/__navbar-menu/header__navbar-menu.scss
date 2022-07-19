@@ -1,0 +1,14 @@
+.header__navbar-menu {
+  display: none;
+  @include resetButtonStyles();
+}
+
+@media screen and (max-width: $tablet) {
+  .header__navbar-menu {
+    display: block;
+    margin-left: auto;
+    background: url(../../../../images/logos/burger-menu.svg) no-repeat;
+    width: 22px;
+    height: 20px;
+  }
+}

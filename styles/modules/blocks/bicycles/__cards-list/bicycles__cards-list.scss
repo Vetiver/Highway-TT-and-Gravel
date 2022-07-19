@@ -1,0 +1,14 @@
+.bicycles__cards-list {
+  @include resetListStyles;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-area: cards;
+  gap: 30px;
+  justify-items: center;
+}
+
+@media screen and (max-width: $tablet) {
+  .bicycles__cards-list {
+    grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+  }
+}

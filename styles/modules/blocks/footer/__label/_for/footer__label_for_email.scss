@@ -1,0 +1,11 @@
+.footer__label_for_email {
+  padding-bottom: 35px;
+  grid-area: email;
+}
+
+@media screen and(max-width: 400px) {
+  .footer__label_for_email {
+    padding-bottom: 50px;
+    grid-area: email;
+  }
+}

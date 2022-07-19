@@ -1,0 +1,16 @@
+.bicycles__type-list {
+  @include resetListStyles();
+  padding-bottom: 6px;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 40px;
+  grid-area: type-buttons;
+  align-items: end;
+  justify-self: end;
+}
+
+@media screen and (max-width: $tablet) {
+  .bicycles__type-list {
+    display: none;
+  }
+}

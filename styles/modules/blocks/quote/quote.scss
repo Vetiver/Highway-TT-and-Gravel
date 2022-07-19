@@ -1,0 +1,38 @@
+.quote {
+  padding-top: 120px;
+  padding-right: 120px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "quote-image quote-title"
+    "quote-image quote-caption";
+  gap: 0 80px;
+}
+
+@media screen and (max-width: 1024px) {
+  .quote {
+    max-width: 928px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .quote {
+    grid-template-columns: 1fr;
+    max-width: 720px;
+    grid-template-areas:
+      "quote-image"
+      "quote-title"
+      "quote-caption";
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .quote {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid #e3e3e3;
+  }
+}

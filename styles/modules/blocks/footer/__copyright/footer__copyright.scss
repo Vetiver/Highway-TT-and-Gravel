@@ -1,0 +1,12 @@
+.footer__copyright {
+  margin: 0;
+  @include font($navbar-size, 600, 1.4, normal);
+  color: $americanSilver;
+  grid-area: copyright;
+}
+
+@media screen and(max-width: 400px) {
+  .footer__copyright {
+    align-self: center;
+  }
+}
